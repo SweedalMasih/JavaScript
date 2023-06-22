@@ -1,5 +1,8 @@
-let country = "India";
-let continent = "Asia";
+const country = "India";
+const continent = "Asia";
 let population = 1406;
 
-console.log(country, continent, population);
+const isIsland = false;
+const language = "Hindi";
+
+console.log(isIsland, population, country, language);
