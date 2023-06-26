@@ -11,4 +11,7 @@ console.log(population > 6);
 console.log(population < 33);
 
 const description = country + " is in " + continent + ", and it's " + population + " million people speak " + language;
-console.log(description);
+
+const newDescription = `${country} is in ${continent}, and it's ${population} million people speak ${language}`;
+
+console.log(newDescription);
