@@ -28,14 +28,14 @@ console.log('123' < 57); // false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // 1149 - 4 - 2 = 1143
 
 // Equality Operators: == vs. ===
-const numNeighbours = parseInt(prompt("How many neighbour countries does your country have?"));
-if (numNeighbours === 1) {
-  console.log("Only 1 border!");
-} else if (numNeighbours > 1) {
-  console.log("More than 1 border");
-} else {
-  console.log("No borders");
-}
+// const numNeighbours = parseInt(prompt("How many neighbour countries does your country have?"));
+// if (numNeighbours === 1) {
+//   console.log("Only 1 border!");
+// } else if (numNeighbours > 1) {
+//   console.log("More than 1 border");
+// } else {
+//   console.log("No borders");
+// }
 
 // Logical Operators
 if (language === "English" && population < 50 && !isIsland) {
@@ -65,3 +65,6 @@ switch (language) {
   default:
     console.log(`Great language too :D`)
 }
+
+// The Conditional (Ternary) Operator
+console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average`);
