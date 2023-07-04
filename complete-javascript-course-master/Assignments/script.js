@@ -28,14 +28,14 @@ console.log('123' < 57); // false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // 1149 - 4 - 2 = 1143
 
 // Equality Operators: == vs. ===
-// const numNeighbours = parseInt(prompt("How many neighbour countries does your country have?"));
-// if (numNeighbours === 1) {
-//   console.log("Only 1 border!");
-// } else if (numNeighbours > 1) {
-//   console.log("More than 1 border");
-// } else {
-//   console.log("No borders");
-// }
+const numNeighbours = parseInt(prompt("How many neighbour countries does your country have?"));
+if (numNeighbours === 1) {
+  console.log("Only 1 border!");
+} else if (numNeighbours > 1) {
+  console.log("More than 1 border");
+} else {
+  console.log("No borders");
+}
 
 // Logical Operators
 if (language === "English" && population < 50 && !isIsland) {
@@ -68,3 +68,26 @@ switch (language) {
 
 // The Conditional (Ternary) Operator
 console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average`);
+
+
+// Section 1: Coding Challenges
+
+// Coding Challenge #1
+// Test Data 1 
+const heightOfMark = 1.69;
+const weightOfMark = 78;
+const heightOfJohn = 1.95;
+const weightOfJohn = 92;
+
+// Test Data 2
+// const heightOfMark = 1.88;
+// const weightOfMark = 95;
+// const heightOfJohn = 1.76;
+// const weightOfJohn = 85;
+
+const markBMI = weightOfMark / (heightOfMark ** 2);
+const johnBMI = weightOfJohn / (heightOfJohn ** 2);
+
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI, johnBMI, markHigherBMI);
