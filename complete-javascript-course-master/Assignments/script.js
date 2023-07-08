@@ -137,4 +137,16 @@ const bill = 275;
 
 const tip = bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
 
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
+// Functions
+
+const describeCountry = (country, population, capitalCity) => {
+  return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+}
+
+const descIndia = describeCountry('India', 1406, 'Delhi');
+const descJapan = describeCountry('Japan', 127, 'Tokyo');
+const descFinland = describeCountry('Finland', 6, 'Helsinki');
+
+console.log(descIndia, descFinland, descJapan);
