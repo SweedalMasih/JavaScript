@@ -150,3 +150,17 @@ const descJapan = describeCountry('Japan', 127, 'Tokyo');
 const descFinland = describeCountry('Finland', 6, 'Helsinki');
 
 console.log(descIndia, descFinland, descJapan);
+
+// Function Declarations vs. Expressions
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+const percentageOfWorld2 = function (population) {
+  return (population / 7900) * 100;
+}
+
+const percIndia = percentageOfWorld1(1406);
+const percChina = percentageOfWorld1(1441);
+const percUSA = percentageOfWorld1(332);
+console.log(percIndia, percChina, percUSA);
