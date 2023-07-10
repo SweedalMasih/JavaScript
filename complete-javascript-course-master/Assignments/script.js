@@ -164,3 +164,12 @@ const percIndia = percentageOfWorld1(1406);
 const percChina = percentageOfWorld1(1441);
 const percUSA = percentageOfWorld1(332);
 console.log(percIndia, percChina, percUSA);
+
+const percentageOfWorld3 = population => {
+  return (population / 7900) * 100;
+}
+
+const percIndia3 = percentageOfWorld3(1406);
+const percChina3 = percentageOfWorld3(1441);
+const percUSA3 = percentageOfWorld3(332);
+console.log(percIndia3, percChina3, percUSA3);
