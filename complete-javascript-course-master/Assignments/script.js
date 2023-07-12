@@ -174,8 +174,22 @@ const percChina3 = percentageOfWorld3(1441);
 const percUSA3 = percentageOfWorld3(332);
 console.log(percIndia3, percChina3, percUSA3);
 
+// Functions Calling Other Functions
+
 const describePopulation = (country, population) => {
   return `${country} has ${population} million people, which is about ${percentageOfWorld1(population)}% of the world`;
 }
 
 console.log(describePopulation("India", 1406));
+
+// Introduction to Arrays
+
+const populations = [1406, 1441, 332, 127];
+console.log(populations.length === 4);
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[3])
+];
+console.log(percentages);
