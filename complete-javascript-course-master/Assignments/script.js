@@ -193,3 +193,16 @@ const percentages = [
   percentageOfWorld1(populations[3])
 ];
 console.log(percentages);
+
+// Basic Array Operations (Methods)
+
+const neighbours = ["Nepal", "Bhutan", "Srilanka"];
+neighbours.push("Utopia");
+neighbours.pop();
+console.log(neighbours);
+if (!neighbours.includes("Germany")) {
+  console.log(`Probably not a central European country :D'`);
+}
+
+neighbours[neighbours.indexOf("Srilanka")] = "China";
+console.log(neighbours);
