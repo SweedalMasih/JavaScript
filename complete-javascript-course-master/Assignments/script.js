@@ -10,25 +10,36 @@ population++;
 console.log(population > 6);
 console.log(population < 33);
 
-const description = country + " is in " + continent + ", and it's " + population + " million people speak " + language;
+const description =
+  country +
+  " is in " +
+  continent +
+  ", and it's " +
+  population +
+  " million people speak " +
+  language;
 
 const newDescription = `${country} is in ${continent}, and it's ${population} million people speak ${language}`;
 
 if (population > 33) {
   console.log(`${country}'s population is above average`);
 } else {
-  console.log(`${country}'s population is ${33 - population} million below average'`);
+  console.log(
+    `${country}'s population is ${33 - population} million below average'`
+  );
 }
 
 // Type Conversion and Coercion
-console.log('9' - '5'); // 4
-console.log('19' - '13' + '17'); // 617
-console.log('19' - '13' + 17); // 23
-console.log('123' < 57); // false
-console.log(5 + 6 + '4' + 9 - 4 - 2); // 1149 - 4 - 2 = 1143
+console.log("9" - "5"); // 4
+console.log("19" - "13" + "17"); // 617
+console.log("19" - "13" + 17); // 23
+console.log("123" < 57); // false
+console.log(5 + 6 + "4" + 9 - 4 - 2); // 1149 - 4 - 2 = 1143
 
 // Equality Operators: == vs. ===
-const numNeighbours = parseInt(prompt("How many neighbour countries does your country have?"));
+const numNeighbours = parseInt(
+  prompt("How many neighbour countries does your country have?")
+);
 if (numNeighbours === 1) {
   console.log("Only 1 border!");
 } else if (numNeighbours > 1) {
@@ -63,17 +74,18 @@ switch (language) {
     console.log(`5th most spoken language`);
     break;
   default:
-    console.log(`Great language too :D`)
+    console.log(`Great language too :D`);
 }
 
 // The Conditional (Ternary) Operator
-console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average`);
-
+console.log(
+  `${country}'s population is ${population > 33 ? "above" : "below"} average`
+);
 
 // Section 1: Coding Challenges
 
 // Coding Challenge #1
-// Test Data 1 
+// Test Data 1
 const heightOfMark = 1.69;
 const weightOfMark = 78;
 const heightOfJohn = 1.95;
@@ -85,8 +97,8 @@ const weightOfJohn = 92;
 // const heightOfJohn = 1.76;
 // const weightOfJohn = 85;
 
-const markBMI = weightOfMark / (heightOfMark ** 2);
-const johnBMI = weightOfJohn / (heightOfJohn ** 2);
+const markBMI = weightOfMark / heightOfMark ** 2;
+const johnBMI = weightOfJohn / heightOfJohn ** 2;
 
 const markHigherBMI = markBMI > johnBMI;
 
@@ -95,7 +107,7 @@ const markHigherBMI = markBMI > johnBMI;
 if (markHigherBMI) {
   console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`);
 } else {
-  console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`)
+  console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`);
 }
 
 // Coding Challenge #3
@@ -137,17 +149,19 @@ const bill = 275;
 
 const tip = bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
 
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
+);
 
 // Functions
 
 const describeCountry = (country, population, capitalCity) => {
   return `${country} has ${population} million people and its capital city is ${capitalCity}`;
-}
+};
 
-const descIndia = describeCountry('India', 1406, 'Delhi');
-const descJapan = describeCountry('Japan', 127, 'Tokyo');
-const descFinland = describeCountry('Finland', 6, 'Helsinki');
+const descIndia = describeCountry("India", 1406, "Delhi");
+const descJapan = describeCountry("Japan", 127, "Tokyo");
+const descFinland = describeCountry("Finland", 6, "Helsinki");
 
 console.log(descIndia, descFinland, descJapan);
 
@@ -158,16 +172,16 @@ function percentageOfWorld1(population) {
 
 const percentageOfWorld2 = function (population) {
   return (population / 7900) * 100;
-}
+};
 
 const percIndia = percentageOfWorld1(1406);
 const percChina = percentageOfWorld1(1441);
 const percUSA = percentageOfWorld1(332);
 console.log(percIndia, percChina, percUSA);
 
-const percentageOfWorld3 = population => {
+const percentageOfWorld3 = (population) => {
   return (population / 7900) * 100;
-}
+};
 
 const percIndia3 = percentageOfWorld3(1406);
 const percChina3 = percentageOfWorld3(1441);
@@ -177,8 +191,10 @@ console.log(percIndia3, percChina3, percUSA3);
 // Functions Calling Other Functions
 
 const describePopulation = (country, population) => {
-  return `${country} has ${population} million people, which is about ${percentageOfWorld1(population)}% of the world`;
-}
+  return `${country} has ${population} million people, which is about ${percentageOfWorld1(
+    population
+  )}% of the world`;
+};
 
 console.log(describePopulation("India", 1406));
 
@@ -190,7 +206,7 @@ const percentages = [
   percentageOfWorld1(populations[0]),
   percentageOfWorld1(populations[1]),
   percentageOfWorld1(populations[2]),
-  percentageOfWorld1(populations[3])
+  percentageOfWorld1(populations[3]),
 ];
 console.log(percentages);
 
@@ -206,3 +222,13 @@ if (!neighbours.includes("Germany")) {
 
 neighbours[neighbours.indexOf("Srilanka")] = "China";
 console.log(neighbours);
+
+// Introduction to Objects
+
+const myCountry = {
+  country: "India",
+  capital: "Delhi",
+  language: "Hindi",
+  population: 1406,
+  neighbours: ["Nepal", "Bhutan", "Srilanka"],
+};
